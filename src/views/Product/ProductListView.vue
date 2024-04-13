@@ -13,7 +13,36 @@
 
 
                             <h1>상품 리스트</h1>
-                            <table></table>
+                            <!--
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>에</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>헤<ul>
+                                <li>사진</li>
+                                <li>상품명</li>
+                                <li>가격</li>
+                                <li>사진</li>
+                            </ul></td>
+                                        <td>ㅇ원</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            -->
+                            <ul v-bind:key="i" v-for="(productVo, i) in pList">
+                                <li>
+                                    <img src="">
+                                    <!-- <img v-bind:src="`http://localhost:9000/upload/${productVo.saveName}`"> -->
+                                </li>
+                                <li>{{ productVo.p_name }}</li>
+                                <li><strong>{{ productVo.p_price }}원</strong></li>
+                            </ul>
 
 
 
@@ -35,7 +64,8 @@
 </template>
 
 <script>
-import "@/assets/css/Product/ProductListView.css"
+import axios from 'axios';
+import "@/assets/css/Product/ProductListView.css";
 import AppFooter from "@/components/AppFooter.vue";
 import AppHeader from "@/components/AppHeader.vue";
 
@@ -46,10 +76,30 @@ export default {
         AppFooter,
     },
     data() {
-        return {};
+        return {
+            pList:[],
+            productVo:{}
+        };
     },
-    methods: {},
-    created() { },
+    methods: {
+        getList(){
+            axios({
+                method: 'get',
+                url: 'http://localhost:9000/api/product/list',
+                headers: { "Content-Type": "application/json; charset=utf-8" },
+
+                responseType: 'json'
+            }).then(response => {
+                this.pList = response.data.apiData;
+                console.log(this.pList);
+            }).catch(error => {
+                console.log(error);
+            });
+        }
+    },
+    created(){
+        this.getList();
+    },
 };
 </script>
 
