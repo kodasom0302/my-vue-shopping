@@ -12,37 +12,29 @@
 
 
 
-                            <h1>상품 리스트</h1>
-                            <!--
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>에</th>
-                                    </tr>
-                                </thead>
+                            <!-- <h1>상품 리스트</h1> -->
 
-                                <tbody>
-                                    <tr>
-                                        <td>헤<ul>
-                                <li>사진</li>
-                                <li>상품명</li>
-                                <li>가격</li>
-                                <li>사진</li>
-                            </ul></td>
-                                        <td>ㅇ원</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            -->
-                            <ul v-bind:key="i" v-for="(productVo, i) in pList">
-                                <li>
-                                    <img src="">
-                                    <!-- <img v-bind:src="`http://localhost:9000/upload/${productVo.saveName}`"> -->
-                                </li>
-                                <li>{{ productVo.p_name }}</li>
-                                <li><strong>{{ productVo.p_price }}원</strong></li>
-                            </ul>
+                            <div id="ulAll">
+
+                                <ul>
+                                    <li><img id="clothesImg" src="https://www.fashionn.com/files/board/2018/image/p1cforbgmvcok1ii51o8c1tecoc11.jpg"></li>
+                                    <li>영수 스페셜 원피스</li>
+                                    <li><strong>10,000원</strong></li>
+                                </ul>
+
+                                <ul>
+                                    <li><img id="clothesImg" src="https://www.fashionn.com/files/board/2018/image/p1cforbgmvcok1ii51o8c1tecoc11.jpg"></li>
+                                    <li>영수 스페셜 진</li>
+                                    <li><strong>8,000원</strong></li>
+                                </ul>
+
+                                <ul>
+                                    <li><img id="clothesImg" src="https://www.fashionn.com/files/board/2018/image/p1cforbgmvcok1ii51o8c1tecoc11.jpg"></li>
+                                    <li>영수 스페셜 원피스</li>
+                                    <li><strong>10,000원</strong></li>
+                                </ul>
+
+                            </div>
 
 
 
@@ -64,7 +56,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import "@/assets/css/Product/ProductListView.css";
 import AppFooter from "@/components/AppFooter.vue";
 import AppHeader from "@/components/AppHeader.vue";
@@ -76,30 +67,10 @@ export default {
         AppFooter,
     },
     data() {
-        return {
-            pList:[],
-            productVo:{}
-        };
+        return {};
     },
-    methods: {
-        getList(){
-            axios({
-                method: 'get',
-                url: 'http://localhost:9000/api/product/list',
-                headers: { "Content-Type": "application/json; charset=utf-8" },
-
-                responseType: 'json'
-            }).then(response => {
-                this.pList = response.data.apiData;
-                console.log(this.pList);
-            }).catch(error => {
-                console.log(error);
-            });
-        }
-    },
-    created(){
-        this.getList();
-    },
+    methods: {},
+    created(){},
 };
 </script>
 
