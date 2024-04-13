@@ -1,0 +1,23 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#clothesImage{
+    width: 90px;
+    height: 120px;
+}
+
+#addBtn{
+    border: 1px solid black;
+    float: right;
+    margin-top: 10px;
+    margin-right: 516px;
+}
