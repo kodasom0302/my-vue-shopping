@@ -1,0 +1,9 @@
+.header {
+    background-color: rgb(104, 14, 174);
+    left: 0px;
+    top: -2px;
+    max-width: 1920px;
+    height: 115px;
+    z-index: 2;
+  }
+  
