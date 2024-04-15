@@ -1,6 +1,13 @@
+#contentGroup{
+    margin-left: 560px;
+}
+
 #allUl{
-    display: inline-flex;
-    margin-top: 30px;
+    display: flex;
+    /*
+    flex-wrap: wrap;
+    width: calc(100%/3);
+    */
 }
 
 #clothesImg{
