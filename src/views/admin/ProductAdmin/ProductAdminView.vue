@@ -58,7 +58,6 @@
                                             <td><img id="clothesImage" src="https://www.fashionn.com/files/board/2018/image/p1cforbgmvcok1ii51o8c1tecoc11.jpg"></td>
                                             <td>영수 스페셜 티셔츠</td>
                                             <td>10,000원</td>
-                                            <td><router-link to="">수정</router-link></td>
                                             <td><router-link to="">삭제</router-link></td>
                                         </tr>
 
@@ -66,7 +65,6 @@
                                             <td><img id="clothesImage" src="https://www.fashionn.com/files/board/2018/image/p1cforbgmvcok1ii51o8c1tecoc11.jpg"></td>
                                             <td>영수 스페셜 진</td>
                                             <td>8,000원</td>
-                                            <td><router-link to="">수정</router-link></td>
                                             <td><router-link to="">삭제</router-link></td>
                                         </tr>
 
@@ -74,7 +72,6 @@
                                             <td><img id="clothesImage" src="https://www.fashionn.com/files/board/2018/image/p1cforbgmvcok1ii51o8c1tecoc11.jpg"></td>
                                             <td>에스파 닝수 착용!!! 프린세스 원피스</td>
                                             <td>1,000,000원</td>
-                                            <td><router-link to="">수정</router-link></td>
                                             <td><router-link to="">삭제</router-link></td>
                                         </tr>
                                     </tbody>
