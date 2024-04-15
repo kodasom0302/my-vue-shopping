@@ -26,14 +26,16 @@
 	text-align: center;
 }
 
-#user #joinForm .button-area {
-	margin: 30px 0px 0px 0px;
-	text-align: center;
-}
-
-/* 회원가입 버튼 */
- #user #joinForm .button-area button {
-    width: 100px;
+#productAddForm #btnAdd button{
+    width: 80px;
     padding: 5px;
     cursor: pointer;
+    background-color: rgb(132, 51, 207);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#productAddForm #productAddFormGroup textarea{
+    resize: none;
 }
