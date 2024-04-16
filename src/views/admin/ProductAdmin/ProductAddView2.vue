@@ -28,10 +28,8 @@
                                             <div id="">
                                                 <div id="insertImg">
                                                     <img id="clothesImgPreview" src="#">
-                                                    <div id="imageGroup">
-                                                        <label id="productAddFormTitle">착장 사진</label>
-                                                        <input type="file">
-                                                    </div>
+                                                    <label id="productAddFormTitle">착장 사진</label>
+                                                    <input type="file">
                                                 </div>
                                             </div>
 
@@ -93,7 +91,7 @@
 </template>
 
 <script>
-import "@/assets/css/admin/add2.css";
+import "@/assets/css/admin/ProductAddView.css";
 import AppFooter from "@/components/customer/AppFooter.vue";
 import AppHeader from "@/components/customer/AppHeader.vue";
 

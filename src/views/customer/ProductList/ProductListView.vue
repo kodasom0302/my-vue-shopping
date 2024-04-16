@@ -19,6 +19,8 @@
                                 <div id="contentGroup">
 
                                     <h1>상품 리스트</h1>
+                                    
+                                    <p>아우터</p>
 
                                     <div id="allUl">
 
@@ -59,6 +61,11 @@
                                         </ul>
 
                                     </div>
+                                    
+                                    <div id="paging">
+                                        <span>1 2 3 4 5 6</span>
+                                    </div>
+
                                 </div>
 
                             </div>
