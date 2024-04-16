@@ -1,8 +1,14 @@
 #contentGroup{
     margin-left: 560px;
+    width: 700px;
+    background-color: white;
 }
 
-#allUl{
+#background{
+    background-color: blueviolet;
+}
+
+#contentGroup #allUl{
     display: flex;
     /*
     flex-wrap: wrap;
@@ -10,7 +16,11 @@
     */
 }
 
-#clothesImg{
-    width: 90px;
-    height: 140px;
+#contentGroup #allUl #oneUl{
+    width: 233px;
+}
+
+#contentGroup #allUl #oneUl #clothesImg{
+    width: 120px;
+    height: 170px;
 }
