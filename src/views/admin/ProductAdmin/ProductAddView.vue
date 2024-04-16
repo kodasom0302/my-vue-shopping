@@ -16,38 +16,42 @@
 
                             <div id="productAddForm">
                                 <form action="" method="">
-                                    
-                                    <div id="productAddFormGroup">
-                                        <label id="productAddFormTitle">착장 사진</label>
-                                        <input type="file">
-                                    </div>
 
-                                    <div id="productAddFormGroup">
-                                        <label id="productAddFormTitle">상품명</label>
-                                        <input type="text">
-                                    </div>
+                                    <div id="addFormTitleGroup">
 
-                                    <div id="productAddFormGroup">
-                                        <label id="productAddFormTitle">가격</label>
-                                        <input type="text"> 원
-                                    </div>
+                                        <div id="productAddFormGroup">
+                                            <label id="productAddFormTitle">착장 사진</label>
+                                            <input type="file">
+                                        </div>
 
-                                    <div id="productAddFormGroup">
-                                        <span id="productAddFormTitle">종류</span>
+                                        <div id="productAddFormGroup">
+                                            <label id="productAddFormTitle">상품명</label>
+                                            <input type="text">
+                                        </div>
 
-                                        <input type="radio" name="productType" value="outer">
-                                        <label>아우터</label>
+                                        <div id="productAddFormGroup">
+                                            <label id="productAddFormTitle">가격</label>
+                                            <input type="text"> 원
+                                        </div>
 
-                                        <input type="radio" name="productType" value="top">
-                                        <label>상의</label>
+                                        <div id="productAddFormGroup">
+                                            <span id="productAddFormTitle">종류</span>
 
-                                        <input type="radio" name="productType" value="bottom">
-                                        <label>하의</label>
-                                    </div>
+                                            <input type="radio" name="productType" value="outer">
+                                            <label>아우터</label>
 
-                                    <div id="productAddFormGroup">
-                                        <label id="productAddFormTitle">설명</label>
-                                        <textarea></textarea>
+                                            <input type="radio" name="productType" value="top">
+                                            <label>상의</label>
+
+                                            <input type="radio" name="productType" value="bottom">
+                                            <label>하의</label>
+                                        </div>
+
+                                        <div id="productAddFormGroup">
+                                            <label id="productAddFormTitle">설명</label>
+                                            <textarea></textarea>
+                                        </div>
+                                        
                                     </div>
 
                                     <div id="btnAdd">
