@@ -3,6 +3,14 @@
     src: url("@/assets/font/부크크고딕_굵은글씨.ttf");
 }
 
+#v-ifIsTrue{
+    background-color: white;
+}
+
+#v-ifIsFalse{
+    background-color: rgb(194, 145, 239);
+}
+
 #productFormGroup{
     text-align: center;
     font-family: "bkkGothicBold";

@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "bkkGothicBold";
+    src: url("@/assets/font/부크크고딕_굵은글씨.ttf");
+}
+@font-face {
+    font-family: "bkkGothicThin";
+    src: url("@/assets/font/부크크고딕_얇은글씨.ttf");
+}
+
+#addContentGroup{
+    font-family: "bkkGothicThin";
+}
+
+#addContentGroup h1, p{
+    margin-left: 300px
+}
+
+#addContentGroup h1{
+    font-family: "bkkGothicBold";
+}
+
+#addContentGroup p{
+    padding-left: 20px;
+}
+
+#productAddFormGroup{
+	padding: 10px 5px 10px 400px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    text-align: left;
+    /*float: right;*/
+}
+
+#insertImg #clothesImgPreview{
+    width: 300px;
+    height: 300px;
+    margin-right: 80px;
+}
+
+#productAddFormTitle{
+    display: inline-block;  /* 인라인 요소 가로폭을 주려고 */
+    width: 70px;
+    margin-right: 20px;
+}
+
+#productAddForm{
+	width: 800px;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 30px 10px 30px 10px;
+}
+
+#productAddForm #addFormTitleGroup{
+    margin-left: 80px;
+    text-align: right;
+}
+
+#productAddForm #productAddFormGroup #insertImg{
+    /*float: left;*/
+}
+
+#productAddForm #productAddFormGroup input[type="text"]{
+    border: none;
+    border-bottom: 2px solid #680eae;
+}
+
+#productAddForm #productAddFormGroup input[type="radio"] {margin-left: 10px;}
+
+#productAddForm #btnAdd{
+    margin: 30px 0px 0px 0px;
+	text-align: center;
+}
+
+#productAddForm #btnAdd button{
+    width: 80px;
+    margin: 180px 0px 0px 50px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #680eae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#productAddForm #productAddFormGroup textarea{
+    resize: none;
+}
